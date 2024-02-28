@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @description This is a userscript.
 // @match       *://*/*
-// @version     0.0.0
+// @version     0.0.1
 // @author      Nick Lin
 // @require     https://cdn.jsdelivr.net/combine/npm/@violentmonkey/dom@2,npm/@violentmonkey/ui@0.7
 // @grant       GM_addStyle

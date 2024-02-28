@@ -17,10 +17,12 @@
     "ci": "run-s lint",
     "build:js": "rollup -c",
     "build": "cross-env NODE_ENV=production run-s ci clean build:js",
-    "build:version": "yarn version --patch && cross-env NODE_ENV=production run-s ci clean build:js"
+    "build:version": "yarn version --patch && cross-env NODE_ENV=production run-s ci clean build:js",
+    "translate:tc": "jsontt assets/SteamDB_CN.json --module google --from zh-CN --to zh-TW"
   },
   "dependencies": {
     "@babel/runtime": "^7.23.7",
+    "@parvineyvazov/json-translator": "^2.2.1",
     "@violentmonkey/dom": "^2.1.5",
     "@violentmonkey/ui": "^0.7.8",
     "solid-js": "^1.8.7"
